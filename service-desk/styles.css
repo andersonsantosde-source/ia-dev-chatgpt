@@ -333,6 +333,11 @@ td {
   vertical-align: top;
 }
 
+.empty-table {
+  color: var(--muted);
+  text-align: center;
+}
+
 th {
   color: #344054;
   background: #f8fafc;
