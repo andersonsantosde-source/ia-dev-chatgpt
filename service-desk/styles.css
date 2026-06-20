@@ -244,12 +244,24 @@ textarea {
 }
 
 .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 24px;
   border-radius: 999px;
-  padding: 4px 8px;
+  padding: 5px 10px;
   color: #293142;
   background: #eef2f7;
   font-size: 12px;
   font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge.status-aberto {
+  color: var(--primary);
+  background: #e8eeff;
 }
 
 .badge.status-resolvido {
@@ -283,9 +295,14 @@ textarea {
 
 .details-header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 18px;
   margin-bottom: 22px;
+}
+
+.details-header > .badge {
+  margin-top: 4px;
 }
 
 .details-header h3 {
